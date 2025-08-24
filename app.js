@@ -68,7 +68,8 @@ const sessionOptions = {
 
 // ROOT ROUTE
 app.get("/", (req, res) => {
-  res.send("Hi.. i am Root");
+  // res.send("Hi.. i am Root");
+  res.redirect("/listings");
 });
 
 app.use(session(sessionOptions));
